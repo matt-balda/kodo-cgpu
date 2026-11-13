@@ -1,0 +1,8 @@
+{
+  "uuid": "kodo-cgpu@desktop.local",
+  "name": "Kodō — Monitor de CPU e GPU",
+  "description": "鼓動 (kodō): o pulso do seu PC. Uso e temperatura de CPU, GPU (NVIDIA) e RAM num widget fixo na área de trabalho e num indicador na barra superior.",
+  "shell-version": ["50", "51"],
+  "settings-schema": "org.gnome.shell.extensions.kodo-cgpu",
+  "version": 1
+}

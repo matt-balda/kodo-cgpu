@@ -1,0 +1,99 @@
+/* Kodō (鼓動) — Monitor de CPU e GPU */
+
+/* Cartão do widget na área de trabalho */
+.cgm-widget {
+    width: 290px;
+    padding: 14px 16px;
+    border-radius: 18px;
+    color: #f6f5f4;
+    background-color: rgba(20, 20, 26, 0.78);
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.30);
+}
+
+/* Mesmo painel dentro do menu da barra superior */
+.cgm-menu-view {
+    width: 290px;
+    padding: 4px 12px;
+}
+
+.cgm-separator {
+    height: 1px;
+    margin: 12px 0;
+    background-color: rgba(255, 255, 255, 0.08);
+}
+
+.cgm-header {
+    spacing: 10px;
+}
+
+.cgm-title {
+    font-size: 10pt;
+    font-weight: 800;
+}
+
+.cgm-cpu .cgm-title { color: #62a0ea; }
+.cgm-gpu .cgm-title { color: #33d17a; }
+.cgm-ram .cgm-title { color: #c061cb; }
+
+.cgm-subtitle {
+    font-size: 8.5pt;
+}
+
+.cgm-value {
+    font-size: 17pt;
+    font-weight: 700;
+    font-feature-settings: "tnum";
+}
+
+.cgm-graph {
+    height: 46px;
+    margin-top: 8px;
+}
+
+.cgm-bar {
+    height: 8px;
+    margin-top: 8px;
+}
+
+.cgm-stats {
+    margin-top: 8px;
+    spacing: 6px;
+}
+
+.cgm-chip-caption {
+    font-size: 7pt;
+    font-weight: 700;
+}
+
+.cgm-chip-value {
+    font-size: 10pt;
+    font-weight: 600;
+    font-feature-settings: "tnum";
+}
+
+.cgm-level-ok { color: #57e389; }
+.cgm-level-warm { color: #f8e45c; }
+.cgm-level-hot { color: #ff7b63; }
+
+/* Barra superior */
+.cgm-panel-values {
+    spacing: 4px;
+}
+
+.cgm-panel-caption {
+    font-size: 8.5pt;
+    font-weight: 700;
+}
+
+.cgm-panel-gap {
+    margin-left: 8px;
+}
+
+.cgm-panel-value {
+    font-feature-settings: "tnum";
+    text-align: right;
+}
+
+.cgm-panel-pct { min-width: 2.1em; }
+.cgm-panel-temp { min-width: 1.9em; }

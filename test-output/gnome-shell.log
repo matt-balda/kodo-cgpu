@@ -1,0 +1,597 @@
+libmutter-Message: 17:46:42.639: Running GNOME Shell (using mutter 50.1) as a Wayland display server
+
+(gnome-shell:135203): libmutter-WARNING **: 17:46:42.639: Unknown experimental feature 'scale-monitor-framebuffer'
+
+(gnome-shell:135203): libmutter-WARNING **: 17:46:42.639: Unknown experimental feature 'xwayland-native-scaling'
+libmutter-Message: 17:46:42.744: Added device '/dev/dri/renderD128' (nvidia-drm) using no mode setting.
+libmutter-Message: 17:46:42.757: Added device '/dev/dri/renderD129' (amdgpu) using no mode setting.
+libmutter-Message: 17:46:42.758: Created gbm renderer for '/dev/dri/renderD128'
+libmutter-Message: 17:46:42.758: Created gbm renderer for '/dev/dri/renderD129'
+libmutter-Message: 17:46:42.758: Boot VGA GPU /dev/dri/renderD128 selected as primary
+** Message: 17:46:42.759: Obtained a high priority EGL context
+libmutter-Message: 17:46:42.770: Added virtual monitor Meta-0
+libmutter-Message: 17:46:42.771: Using Wayland display name 'cgm-test-135177'
+
+(gnome-shell:135203): libmutter-WARNING **: 17:46:42.800: There is no colord server available
+GNOME Shell-Message: 17:46:43.001: Registering session with GDM
+GNOME Shell-Message: 17:46:43.029: Error registering session with GDM: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name org.gnome.DisplayManager was not provided by any .service files
+
+(gnome-shell:135203): GNOME Shell-WARNING **: 17:46:43.036: Failed to inhibit suspend: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.login1 was not provided by any .service files
+
+(gnome-shell:135203): GNOME Shell-CRITICAL **: 17:46:43.080: Could not get a proxy for user 1001: Gio.DBusError: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.login1 was not provided by any .service files
+
+Stack trace:
+  asyncCallback@resource:///org/gnome/gjs/modules/core/overrides/Gio.js:115:23
+  @resource:///org/gnome/shell/ui/init.js:20:20
+  
+
+(gnome-shell:135203): GNOME Shell-WARNING **: 17:46:43.080: Failed to start state machine: can't access property "connectObject", this._loginUser is null
+
+(gnome-shell:135203): GNOME Shell-CRITICAL **: 17:46:43.092: Gio.DBusError: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name org.gnome.Shell.CalendarServer was not provided by any .service files
+
+Stack trace:
+  asyncCallback@resource:///org/gnome/gjs/modules/core/overrides/Gio.js:115:23
+  @resource:///org/gnome/shell/ui/init.js:20:20
+  
+
+(gnome-shell:135203): GNOME Shell-CRITICAL **: 17:46:43.092: Gio.DBusError: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name org.gnome.Shell.CalendarServer was not provided by any .service files
+
+Stack trace:
+  asyncCallback@resource:///org/gnome/gjs/modules/core/overrides/Gio.js:115:23
+  @resource:///org/gnome/shell/ui/init.js:20:20
+  
+invoking IsSupported() failed for remote volume monitor with dbus name org.gtk.vfs.UDisks2VolumeMonitor:: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name org.gtk.vfs.UDisks2VolumeMonitor was not provided by any .service files (g-dbus-error-quark, 2)
+invoking IsSupported() failed for remote volume monitor with dbus name org.gtk.vfs.GoaVolumeMonitor:: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name org.gtk.vfs.GoaVolumeMonitor was not provided by any .service files (g-dbus-error-quark, 2)
+invoking IsSupported() failed for remote volume monitor with dbus name org.gtk.vfs.GPhoto2VolumeMonitor:: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name org.gtk.vfs.GPhoto2VolumeMonitor was not provided by any .service files (g-dbus-error-quark, 2)
+invoking IsSupported() failed for remote volume monitor with dbus name org.gtk.vfs.MTPVolumeMonitor:: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name org.gtk.vfs.MTPVolumeMonitor was not provided by any .service files (g-dbus-error-quark, 2)
+invoking IsSupported() failed for remote volume monitor with dbus name org.gtk.vfs.AfcVolumeMonitor:: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name org.gtk.vfs.AfcVolumeMonitor was not provided by any .service files (g-dbus-error-quark, 2)
+GNOME Shell-Message: 17:46:43.100: Failed to register AuthenticationAgent
+portal is not running: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.portal.IBus was not provided by any .service files
+GNOME Shell-Message: 17:46:43.172: No permission to control network connections: Gio.DBusError: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.PolicyKit1 was not provided by any .service files
+** Message: 17:46:43.178: Failed to start camera monitor
+
+(gnome-shell:135203): Gvc-WARNING **: 17:46:43.180: Failed to connect context: Conexão recusada
+GNOME Shell-Message: 17:46:43.202: Failed to get PolKit permission: Gio.DBusError: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.PolicyKit1 was not provided by any .service files
+
+(gnome-shell:135203): GNOME Shell-CRITICAL **: 17:46:43.238: Impossible to monitor trash: Gio.IOErrorEnum: Operação sem suporte
+
+Stack trace:
+  _init@file:///usr/share/gnome-shell/extensions/ubuntu-dock@ubuntu.com/locations.js:770:43
+  LocationAppInfo@file:///usr/share/gnome-shell/extensions/ubuntu-dock@ubuntu.com/locations.js:114:4
+  TrashAppInfo@file:///usr/share/gnome-shell/extensions/ubuntu-dock@ubuntu.com/locations.js:747:1
+  _ensureApp@file:///usr/share/gnome-shell/extensions/ubuntu-dock@ubuntu.com/locations.js:1342:22
+  getApp@file:///usr/share/gnome-shell/extensions/ubuntu-dock@ubuntu.com/locations.js:1348:14
+  wrapFileManagerApp@file:///usr/share/gnome-shell/extensions/ubuntu-dock@ubuntu.com/locations.js:1295:22
+  _ensureLocations@file:///usr/share/gnome-shell/extensions/ubuntu-dock@ubuntu.com/docking.js:1884:50
+  DockManager@file:///usr/share/gnome-shell/extensions/ubuntu-dock@ubuntu.com/docking.js:1764:14
+  _conditionallyEnableDock@file:///usr/share/gnome-shell/extensions/ubuntu-dock@ubuntu.com/extension.js:21:27
+  enable@file:///usr/share/gnome-shell/extensions/ubuntu-dock@ubuntu.com/extension.js:14:14
+  _callExtensionEnable@resource:///org/gnome/shell/ui/extensionSystem.js:266:38
+  loadExtension@resource:///org/gnome/shell/ui/extensionSystem.js:433:32
+  async*_loadExtensions@resource:///org/gnome/shell/ui/extensionSystem.js:753:24
+  async*_enableAllExtensions@resource:///org/gnome/shell/ui/extensionSystem.js:759:48
+  _sessionUpdated@resource:///org/gnome/shell/ui/extensionSystem.js:794:20
+  async*init@resource:///org/gnome/shell/ui/extensionSystem.js:76:14
+  _initializeUI@resource:///org/gnome/shell/ui/main.js:338:22
+  start@resource:///org/gnome/shell/ui/main.js:197:11
+  @resource:///org/gnome/shell/ui/init.js:12:47
+  @resource:///org/gnome/shell/ui/init.js:20:20
+  
+GNOME Shell-Message: 17:46:43.242: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.GeoClue2 was not provided by any .service files
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.249: st_widget_get_theme_node called on the widget [0x63ea1beef3a0 Gjs_ubuntu-dock_ubuntu_com_docking_DashToDock.left fixed:insensitive "dashtodockContainer"] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.249: st_widget_get_theme_node called on the widget [0x63ea1beef3a0 Gjs_ubuntu-dock_ubuntu_com_docking_DashToDock.left fixed:insensitive "dashtodockContainer"] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.249: st_widget_get_theme_node called on the widget [0x63ea1bf19390 Gjs_ubuntu-dock_ubuntu_com_docking_DashSlideContainer:insensitive] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.249: st_widget_get_theme_node called on the widget [0x63ea1beef3a0 Gjs_ubuntu-dock_ubuntu_com_docking_DashToDock.left fixed:insensitive "dashtodockContainer"] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.249: st_widget_get_theme_node called on the widget [0x63ea1bf19390 Gjs_ubuntu-dock_ubuntu_com_docking_DashSlideContainer:insensitive] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.249: st_widget_get_theme_node called on the widget [0x63ea1bf1a5d0 StBoxLayout "dashtodockBox"] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.249: st_widget_get_theme_node called on the widget [0x63ea1beef3a0 Gjs_ubuntu-dock_ubuntu_com_docking_DashToDock.left fixed:insensitive "dashtodockContainer"] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.249: st_widget_get_theme_node called on the widget [0x63ea1bf19390 Gjs_ubuntu-dock_ubuntu_com_docking_DashSlideContainer:insensitive] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.249: st_widget_get_theme_node called on the widget [0x63ea1bf1a5d0 StBoxLayout "dashtodockBox"] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.249: st_widget_get_theme_node called on the widget [0x63ea1bef0e00 Gjs_ubuntu-dock_ubuntu_com_dash_DockDash:insensitive "dash"] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.249: st_widget_get_theme_node called on the widget [0x63ea1beef3a0 Gjs_ubuntu-dock_ubuntu_com_docking_DashToDock.left fixed:insensitive "dashtodockContainer"] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.249: st_widget_get_theme_node called on the widget [0x63ea1bf19390 Gjs_ubuntu-dock_ubuntu_com_docking_DashSlideContainer:insensitive] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.249: st_widget_get_theme_node called on the widget [0x63ea1bf1a5d0 StBoxLayout "dashtodockBox"] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.249: st_widget_get_theme_node called on the widget [0x63ea1bef0e00 Gjs_ubuntu-dock_ubuntu_com_dash_DockDash:insensitive "dash"] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.249: st_widget_get_theme_node called on the widget [0x63ea1bf15b20 StWidget.dash-background:insensitive] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.249: st_widget_get_theme_node called on the widget [0x63ea1beef3a0 Gjs_ubuntu-dock_ubuntu_com_docking_DashToDock.left fixed:insensitive "dashtodockContainer"] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.249: st_widget_get_theme_node called on the widget [0x63ea1bf19390 Gjs_ubuntu-dock_ubuntu_com_docking_DashSlideContainer:insensitive] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.249: st_widget_get_theme_node called on the widget [0x63ea1bf1a5d0 StBoxLayout "dashtodockBox"] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.249: st_widget_get_theme_node called on the widget [0x63ea1bef0e00 Gjs_ubuntu-dock_ubuntu_com_dash_DockDash:insensitive "dash"] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.249: st_widget_get_theme_node called on the widget [0x63ea1bef2190 StBoxLayout:insensitive "dashtodockDashContainer"] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.249: st_widget_get_theme_node called on the widget [0x63ea1bf07240 Gjs_ubuntu-dock_ubuntu_com_appIcons_DockShowAppsIcon.dash-item-container] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.249: st_widget_get_theme_node called on the widget [0x63ea1bf0e120 StButton.show-apps] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.249: st_widget_get_theme_node called on the widget [0x63ea1bf0f5a0 Gjs_ui_iconGrid_BaseIcon.overview-icon:insensitive] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.249: st_widget_get_theme_node called on the widget [0x63ea1beef3a0 Gjs_ubuntu-dock_ubuntu_com_docking_DashToDock.left fixed:insensitive "dashtodockContainer"] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.249: st_widget_get_theme_node called on the widget [0x63ea1bf19390 Gjs_ubuntu-dock_ubuntu_com_docking_DashSlideContainer:insensitive] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.249: st_widget_get_theme_node called on the widget [0x63ea1bf1a5d0 StBoxLayout "dashtodockBox"] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.249: st_widget_get_theme_node called on the widget [0x63ea1bef0e00 Gjs_ubuntu-dock_ubuntu_com_dash_DockDash:insensitive "dash"] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.249: st_widget_get_theme_node called on the widget [0x63ea1bef2190 StBoxLayout:insensitive "dashtodockDashContainer"] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.249: st_widget_get_theme_node called on the widget [0x63ea1bf07240 Gjs_ubuntu-dock_ubuntu_com_appIcons_DockShowAppsIcon.dash-item-container] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.249: st_widget_get_theme_node called on the widget [0x63ea1bf0e120 StButton.show-apps] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.249: st_widget_get_theme_node called on the widget [0x63ea1bf0f5a0 Gjs_ui_iconGrid_BaseIcon.overview-icon:insensitive] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.249: st_widget_get_theme_node called on the widget [0x63ea1bf106a0 StBoxLayout:insensitive] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.249: st_widget_get_theme_node called on the widget [0x63ea1beef3a0 Gjs_ubuntu-dock_ubuntu_com_docking_DashToDock.left fixed:insensitive "dashtodockContainer"] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.249: st_widget_get_theme_node called on the widget [0x63ea1bf19390 Gjs_ubuntu-dock_ubuntu_com_docking_DashSlideContainer:insensitive] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.249: st_widget_get_theme_node called on the widget [0x63ea1bf1a5d0 StBoxLayout "dashtodockBox"] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.249: st_widget_get_theme_node called on the widget [0x63ea1bef0e00 Gjs_ubuntu-dock_ubuntu_com_dash_DockDash:insensitive "dash"] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.249: st_widget_get_theme_node called on the widget [0x63ea1bef2190 StBoxLayout:insensitive "dashtodockDashContainer"] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.249: st_widget_get_theme_node called on the widget [0x63ea1bf07240 Gjs_ubuntu-dock_ubuntu_com_appIcons_DockShowAppsIcon.dash-item-container] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.249: st_widget_get_theme_node called on the widget [0x63ea1bf0e120 StButton.show-apps] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.249: st_widget_get_theme_node called on the widget [0x63ea1bf0f5a0 Gjs_ui_iconGrid_BaseIcon.overview-icon:insensitive] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.249: st_widget_get_theme_node called on the widget [0x63ea1bf106a0 StBoxLayout:insensitive] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.249: st_widget_get_theme_node called on the widget [0x63ea1bf119b0 StBin:insensitive] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.249: st_widget_get_theme_node called on the widget [0x63ea1beef3a0 Gjs_ubuntu-dock_ubuntu_com_docking_DashToDock.left fixed:insensitive "dashtodockContainer"] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.249: st_widget_get_theme_node called on the widget [0x63ea1bf19390 Gjs_ubuntu-dock_ubuntu_com_docking_DashSlideContainer:insensitive] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.249: st_widget_get_theme_node called on the widget [0x63ea1bf1a5d0 StBoxLayout "dashtodockBox"] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.249: st_widget_get_theme_node called on the widget [0x63ea1bef0e00 Gjs_ubuntu-dock_ubuntu_com_dash_DockDash:insensitive "dash"] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.249: st_widget_get_theme_node called on the widget [0x63ea1bef2190 StBoxLayout:insensitive "dashtodockDashContainer"] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.249: st_widget_get_theme_node called on the widget [0x63ea1bf07240 Gjs_ubuntu-dock_ubuntu_com_appIcons_DockShowAppsIcon.dash-item-container] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.249: st_widget_get_theme_node called on the widget [0x63ea1bf0e120 StButton.show-apps] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.249: st_widget_get_theme_node called on the widget [0x63ea1bf0f5a0 Gjs_ui_iconGrid_BaseIcon.overview-icon:insensitive] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.249: st_widget_get_theme_node called on the widget [0x63ea1bf106a0 StBoxLayout:insensitive] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.249: st_widget_get_theme_node called on the widget [0x63ea1bf119b0 StBin:insensitive] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.249: st_widget_get_theme_node called on the widget [0x63ea1bf13cd0 StIcon.show-apps-icon:insensitive] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.249: st_widget_get_theme_node called on the widget [0x63ea1beef3a0 Gjs_ubuntu-dock_ubuntu_com_docking_DashToDock.left fixed:insensitive "dashtodockContainer"] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.249: st_widget_get_theme_node called on the widget [0x63ea1bf19390 Gjs_ubuntu-dock_ubuntu_com_docking_DashSlideContainer:insensitive] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.249: st_widget_get_theme_node called on the widget [0x63ea1bf1a5d0 StBoxLayout "dashtodockBox"] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.249: st_widget_get_theme_node called on the widget [0x63ea1bef0e00 Gjs_ubuntu-dock_ubuntu_com_dash_DockDash:insensitive "dash"] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.249: st_widget_get_theme_node called on the widget [0x63ea1bef2190 StBoxLayout:insensitive "dashtodockDashContainer"] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.249: st_widget_get_theme_node called on the widget [0x63ea1beef3a0 Gjs_ubuntu-dock_ubuntu_com_docking_DashToDock.left fixed:insensitive "dashtodockContainer"] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.249: st_widget_get_theme_node called on the widget [0x63ea1bf19390 Gjs_ubuntu-dock_ubuntu_com_docking_DashSlideContainer:insensitive] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.250: st_widget_get_theme_node called on the widget [0x63ea1bf1a5d0 StBoxLayout "dashtodockBox"] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.250: st_widget_get_theme_node called on the widget [0x63ea1bef0e00 Gjs_ubuntu-dock_ubuntu_com_dash_DockDash:insensitive "dash"] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.250: st_widget_get_theme_node called on the widget [0x63ea1bef2190 StBoxLayout:insensitive "dashtodockDashContainer"] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.250: st_widget_get_theme_node called on the widget [0x63ea1bef33f0 StScrollView "dashtodockDashScrollview"] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.250: st_widget_get_theme_node called on the widget [0x63ea1beef3a0 Gjs_ubuntu-dock_ubuntu_com_docking_DashToDock.left fixed:insensitive "dashtodockContainer"] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.250: st_widget_get_theme_node called on the widget [0x63ea1bf19390 Gjs_ubuntu-dock_ubuntu_com_docking_DashSlideContainer:insensitive] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.250: st_widget_get_theme_node called on the widget [0x63ea1bf1a5d0 StBoxLayout "dashtodockBox"] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.250: st_widget_get_theme_node called on the widget [0x63ea1bef0e00 Gjs_ubuntu-dock_ubuntu_com_dash_DockDash:insensitive "dash"] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.250: st_widget_get_theme_node called on the widget [0x63ea1bef2190 StBoxLayout:insensitive "dashtodockDashContainer"] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.250: st_widget_get_theme_node called on the widget [0x63ea1bef33f0 StScrollView "dashtodockDashScrollview"] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.250: st_widget_get_theme_node called on the widget [0x63ea1bf04580 StBoxLayout.left:insensitive "dashtodockBoxContainer"] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.250: st_widget_get_theme_node called on the widget [0x63ea1beef3a0 Gjs_ubuntu-dock_ubuntu_com_docking_DashToDock.left fixed:insensitive "dashtodockContainer"] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.250: st_widget_get_theme_node called on the widget [0x63ea1bf19390 Gjs_ubuntu-dock_ubuntu_com_docking_DashSlideContainer:insensitive] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.250: st_widget_get_theme_node called on the widget [0x63ea1bf1a5d0 StBoxLayout "dashtodockBox"] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.250: st_widget_get_theme_node called on the widget [0x63ea1bef0e00 Gjs_ubuntu-dock_ubuntu_com_dash_DockDash:insensitive "dash"] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.250: st_widget_get_theme_node called on the widget [0x63ea1bef2190 StBoxLayout:insensitive "dashtodockDashContainer"] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.250: st_widget_get_theme_node called on the widget [0x63ea1bef33f0 StScrollView "dashtodockDashScrollview"] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.250: st_widget_get_theme_node called on the widget [0x63ea1bf04580 StBoxLayout.left:insensitive "dashtodockBoxContainer"] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.250: st_widget_get_theme_node called on the widget [0x63ea1bf059c0 StBoxLayout:insensitive] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.250: st_widget_get_theme_node called on the widget [0x63ea1beef3a0 Gjs_ubuntu-dock_ubuntu_com_docking_DashToDock.left fixed:insensitive "dashtodockContainer"] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.250: st_widget_get_theme_node called on the widget [0x63ea1bf19390 Gjs_ubuntu-dock_ubuntu_com_docking_DashSlideContainer:insensitive] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.250: st_widget_get_theme_node called on the widget [0x63ea1bf1a5d0 StBoxLayout "dashtodockBox"] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.250: st_widget_get_theme_node called on the widget [0x63ea1bef0e00 Gjs_ubuntu-dock_ubuntu_com_dash_DockDash:insensitive "dash"] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.250: st_widget_get_theme_node called on the widget [0x63ea1bef2190 StBoxLayout:insensitive "dashtodockDashContainer"] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.250: st_widget_get_theme_node called on the widget [0x63ea1bef33f0 StScrollView "dashtodockDashScrollview"] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.250: st_widget_get_theme_node called on the widget [0x63ea1befbd10 StScrollBar] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.250: st_widget_get_theme_node called on the widget [0x63ea1beef3a0 Gjs_ubuntu-dock_ubuntu_com_docking_DashToDock.left fixed:insensitive "dashtodockContainer"] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.250: st_widget_get_theme_node called on the widget [0x63ea1bf19390 Gjs_ubuntu-dock_ubuntu_com_docking_DashSlideContainer:insensitive] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.250: st_widget_get_theme_node called on the widget [0x63ea1bf1a5d0 StBoxLayout "dashtodockBox"] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.250: st_widget_get_theme_node called on the widget [0x63ea1bef0e00 Gjs_ubuntu-dock_ubuntu_com_dash_DockDash:insensitive "dash"] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.250: st_widget_get_theme_node called on the widget [0x63ea1bef2190 StBoxLayout:insensitive "dashtodockDashContainer"] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.250: st_widget_get_theme_node called on the widget [0x63ea1bef33f0 StScrollView "dashtodockDashScrollview"] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.250: st_widget_get_theme_node called on the widget [0x63ea1befbd10 StScrollBar] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.250: st_widget_get_theme_node called on the widget [0x63ea1befc760 StBin "trough"] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.250: st_widget_get_theme_node called on the widget [0x63ea1beef3a0 Gjs_ubuntu-dock_ubuntu_com_docking_DashToDock.left fixed:insensitive "dashtodockContainer"] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.250: st_widget_get_theme_node called on the widget [0x63ea1bf19390 Gjs_ubuntu-dock_ubuntu_com_docking_DashSlideContainer:insensitive] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.250: st_widget_get_theme_node called on the widget [0x63ea1bf1a5d0 StBoxLayout "dashtodockBox"] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.250: st_widget_get_theme_node called on the widget [0x63ea1bef0e00 Gjs_ubuntu-dock_ubuntu_com_dash_DockDash:insensitive "dash"] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.250: st_widget_get_theme_node called on the widget [0x63ea1bef2190 StBoxLayout:insensitive "dashtodockDashContainer"] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.250: st_widget_get_theme_node called on the widget [0x63ea1bef33f0 StScrollView "dashtodockDashScrollview"] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.250: st_widget_get_theme_node called on the widget [0x63ea1befbd10 StScrollBar] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.250: st_widget_get_theme_node called on the widget [0x63ea1beffde0 StWidget.vhandle] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.250: st_widget_get_theme_node called on the widget [0x63ea1beef3a0 Gjs_ubuntu-dock_ubuntu_com_docking_DashToDock.left fixed:insensitive "dashtodockContainer"] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.250: st_widget_get_theme_node called on the widget [0x63ea1bf19390 Gjs_ubuntu-dock_ubuntu_com_docking_DashSlideContainer:insensitive] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.250: st_widget_get_theme_node called on the widget [0x63ea1bf1a5d0 StBoxLayout "dashtodockBox"] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.250: st_widget_get_theme_node called on the widget [0x63ea1bef0e00 Gjs_ubuntu-dock_ubuntu_com_dash_DockDash:insensitive "dash"] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.250: st_widget_get_theme_node called on the widget [0x63ea1bef2190 StBoxLayout:insensitive "dashtodockDashContainer"] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.250: st_widget_get_theme_node called on the widget [0x63ea1bef33f0 StScrollView "dashtodockDashScrollview"] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.250: st_widget_get_theme_node called on the widget [0x63ea1bf04580 StBoxLayout.left:insensitive "dashtodockBoxContainer"] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.250: st_widget_get_theme_node called on the widget [0x63ea1beef3a0 Gjs_ubuntu-dock_ubuntu_com_docking_DashToDock.left fixed:insensitive "dashtodockContainer"] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.250: st_widget_get_theme_node called on the widget [0x63ea1bf19390 Gjs_ubuntu-dock_ubuntu_com_docking_DashSlideContainer:insensitive] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.250: st_widget_get_theme_node called on the widget [0x63ea1bf1a5d0 StBoxLayout "dashtodockBox"] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.250: st_widget_get_theme_node called on the widget [0x63ea1bef0e00 Gjs_ubuntu-dock_ubuntu_com_dash_DockDash:insensitive "dash"] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.250: st_widget_get_theme_node called on the widget [0x63ea1bef2190 StBoxLayout:insensitive "dashtodockDashContainer"] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.250: st_widget_get_theme_node called on the widget [0x63ea1bef33f0 StScrollView "dashtodockDashScrollview"] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.250: st_widget_get_theme_node called on the widget [0x63ea1bf04580 StBoxLayout.left:insensitive "dashtodockBoxContainer"] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.250: st_widget_get_theme_node called on the widget [0x63ea1bf059c0 StBoxLayout:insensitive] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.250: st_widget_get_theme_node called on the widget [0x63ea1beef3a0 Gjs_ubuntu-dock_ubuntu_com_docking_DashToDock.left fixed:insensitive "dashtodockContainer"] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.250: st_widget_get_theme_node called on the widget [0x63ea1bf19390 Gjs_ubuntu-dock_ubuntu_com_docking_DashSlideContainer:insensitive] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.250: st_widget_get_theme_node called on the widget [0x63ea1bf1a5d0 StBoxLayout "dashtodockBox"] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.250: st_widget_get_theme_node called on the widget [0x63ea1bef0e00 Gjs_ubuntu-dock_ubuntu_com_dash_DockDash:insensitive "dash"] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.250: st_widget_get_theme_node called on the widget [0x63ea1bef2190 StBoxLayout:insensitive "dashtodockDashContainer"] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.250: st_widget_get_theme_node called on the widget [0x63ea1bf07240 Gjs_ubuntu-dock_ubuntu_com_appIcons_DockShowAppsIcon.dash-item-container] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.250: st_widget_get_theme_node called on the widget [0x63ea1beef3a0 Gjs_ubuntu-dock_ubuntu_com_docking_DashToDock.left fixed:insensitive "dashtodockContainer"] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.250: st_widget_get_theme_node called on the widget [0x63ea1bf19390 Gjs_ubuntu-dock_ubuntu_com_docking_DashSlideContainer:insensitive] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.250: st_widget_get_theme_node called on the widget [0x63ea1bf1a5d0 StBoxLayout "dashtodockBox"] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.250: st_widget_get_theme_node called on the widget [0x63ea1bef0e00 Gjs_ubuntu-dock_ubuntu_com_dash_DockDash:insensitive "dash"] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.250: st_widget_get_theme_node called on the widget [0x63ea1bef2190 StBoxLayout:insensitive "dashtodockDashContainer"] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.250: st_widget_get_theme_node called on the widget [0x63ea1bf07240 Gjs_ubuntu-dock_ubuntu_com_appIcons_DockShowAppsIcon.dash-item-container] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.250: st_widget_get_theme_node called on the widget [0x63ea1beef3a0 Gjs_ubuntu-dock_ubuntu_com_docking_DashToDock.left fixed:insensitive "dashtodockContainer"] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.250: st_widget_get_theme_node called on the widget [0x63ea1bf19390 Gjs_ubuntu-dock_ubuntu_com_docking_DashSlideContainer:insensitive] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.250: st_widget_get_theme_node called on the widget [0x63ea1bf1a5d0 StBoxLayout "dashtodockBox"] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.250: st_widget_get_theme_node called on the widget [0x63ea1bef0e00 Gjs_ubuntu-dock_ubuntu_com_dash_DockDash:insensitive "dash"] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.250: st_widget_get_theme_node called on the widget [0x63ea1bef2190 StBoxLayout:insensitive "dashtodockDashContainer"] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.250: st_widget_get_theme_node called on the widget [0x63ea1bf07240 Gjs_ubuntu-dock_ubuntu_com_appIcons_DockShowAppsIcon.dash-item-container] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.250: st_widget_get_theme_node called on the widget [0x63ea1bf0e120 StButton.show-apps] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.250: st_widget_get_theme_node called on the widget [0x63ea1beef3a0 Gjs_ubuntu-dock_ubuntu_com_docking_DashToDock.left fixed:insensitive "dashtodockContainer"] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.250: st_widget_get_theme_node called on the widget [0x63ea1bf19390 Gjs_ubuntu-dock_ubuntu_com_docking_DashSlideContainer:insensitive] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.250: st_widget_get_theme_node called on the widget [0x63ea1bf1a5d0 StBoxLayout "dashtodockBox"] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.250: st_widget_get_theme_node called on the widget [0x63ea1bef0e00 Gjs_ubuntu-dock_ubuntu_com_dash_DockDash:insensitive "dash"] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.250: st_widget_get_theme_node called on the widget [0x63ea1bef2190 StBoxLayout:insensitive "dashtodockDashContainer"] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.250: st_widget_get_theme_node called on the widget [0x63ea1bf07240 Gjs_ubuntu-dock_ubuntu_com_appIcons_DockShowAppsIcon.dash-item-container] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.250: st_widget_get_theme_node called on the widget [0x63ea1bf0e120 StButton.show-apps] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.250: st_widget_get_theme_node called on the widget [0x63ea1bf0f5a0 Gjs_ui_iconGrid_BaseIcon.overview-icon:insensitive] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.250: st_widget_get_theme_node called on the widget [0x63ea1beef3a0 Gjs_ubuntu-dock_ubuntu_com_docking_DashToDock.left fixed:insensitive "dashtodockContainer"] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.250: st_widget_get_theme_node called on the widget [0x63ea1bf19390 Gjs_ubuntu-dock_ubuntu_com_docking_DashSlideContainer:insensitive] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.250: st_widget_get_theme_node called on the widget [0x63ea1bf1a5d0 StBoxLayout "dashtodockBox"] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.250: st_widget_get_theme_node called on the widget [0x63ea1bef0e00 Gjs_ubuntu-dock_ubuntu_com_dash_DockDash:insensitive "dash"] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.250: st_widget_get_theme_node called on the widget [0x63ea1bef2190 StBoxLayout:insensitive "dashtodockDashContainer"] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.250: st_widget_get_theme_node called on the widget [0x63ea1bf07240 Gjs_ubuntu-dock_ubuntu_com_appIcons_DockShowAppsIcon.dash-item-container] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.250: st_widget_get_theme_node called on the widget [0x63ea1bf0e120 StButton.show-apps] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.250: st_widget_get_theme_node called on the widget [0x63ea1bf0f5a0 Gjs_ui_iconGrid_BaseIcon.overview-icon:insensitive] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.250: st_widget_get_theme_node called on the widget [0x63ea1bf106a0 StBoxLayout:insensitive] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.250: st_widget_get_theme_node called on the widget [0x63ea1beef3a0 Gjs_ubuntu-dock_ubuntu_com_docking_DashToDock.left fixed:insensitive "dashtodockContainer"] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.250: st_widget_get_theme_node called on the widget [0x63ea1bf19390 Gjs_ubuntu-dock_ubuntu_com_docking_DashSlideContainer:insensitive] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.250: st_widget_get_theme_node called on the widget [0x63ea1bf1a5d0 StBoxLayout "dashtodockBox"] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.250: st_widget_get_theme_node called on the widget [0x63ea1bef0e00 Gjs_ubuntu-dock_ubuntu_com_dash_DockDash:insensitive "dash"] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.250: st_widget_get_theme_node called on the widget [0x63ea1bef2190 StBoxLayout:insensitive "dashtodockDashContainer"] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.250: st_widget_get_theme_node called on the widget [0x63ea1bf07240 Gjs_ubuntu-dock_ubuntu_com_appIcons_DockShowAppsIcon.dash-item-container] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.250: st_widget_get_theme_node called on the widget [0x63ea1bf0e120 StButton.show-apps] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.250: st_widget_get_theme_node called on the widget [0x63ea1bf0f5a0 Gjs_ui_iconGrid_BaseIcon.overview-icon:insensitive] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.250: st_widget_get_theme_node called on the widget [0x63ea1bf106a0 StBoxLayout:insensitive] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.250: st_widget_get_theme_node called on the widget [0x63ea1bf119b0 StBin:insensitive] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.250: st_widget_get_theme_node called on the widget [0x63ea1beef3a0 Gjs_ubuntu-dock_ubuntu_com_docking_DashToDock.left fixed:insensitive "dashtodockContainer"] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.250: st_widget_get_theme_node called on the widget [0x63ea1bf19390 Gjs_ubuntu-dock_ubuntu_com_docking_DashSlideContainer:insensitive] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.250: st_widget_get_theme_node called on the widget [0x63ea1bf1a5d0 StBoxLayout "dashtodockBox"] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.250: st_widget_get_theme_node called on the widget [0x63ea1bef0e00 Gjs_ubuntu-dock_ubuntu_com_dash_DockDash:insensitive "dash"] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.250: st_widget_get_theme_node called on the widget [0x63ea1bef2190 StBoxLayout:insensitive "dashtodockDashContainer"] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.250: st_widget_get_theme_node called on the widget [0x63ea1bf07240 Gjs_ubuntu-dock_ubuntu_com_appIcons_DockShowAppsIcon.dash-item-container] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.250: st_widget_get_theme_node called on the widget [0x63ea1bf0e120 StButton.show-apps] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.250: st_widget_get_theme_node called on the widget [0x63ea1bf0f5a0 Gjs_ui_iconGrid_BaseIcon.overview-icon:insensitive] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.250: st_widget_get_theme_node called on the widget [0x63ea1bf106a0 StBoxLayout:insensitive] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.250: st_widget_get_theme_node called on the widget [0x63ea1bf119b0 StBin:insensitive] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.250: st_widget_get_theme_node called on the widget [0x63ea1bf13cd0 StIcon.show-apps-icon:insensitive] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.250: st_widget_get_theme_node called on the widget [0x63ea1beef3a0 Gjs_ubuntu-dock_ubuntu_com_docking_DashToDock.left fixed:insensitive "dashtodockContainer"] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.250: st_widget_get_theme_node called on the widget [0x63ea1bf19390 Gjs_ubuntu-dock_ubuntu_com_docking_DashSlideContainer:insensitive] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.250: st_widget_get_theme_node called on the widget [0x63ea1bf1a5d0 StBoxLayout "dashtodockBox"] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.250: st_widget_get_theme_node called on the widget [0x63ea1bef0e00 Gjs_ubuntu-dock_ubuntu_com_dash_DockDash:insensitive "dash"] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.250: st_widget_get_theme_node called on the widget [0x63ea1bef2190 StBoxLayout:insensitive "dashtodockDashContainer"] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.250: st_widget_get_theme_node called on the widget [0x63ea1beef3a0 Gjs_ubuntu-dock_ubuntu_com_docking_DashToDock.left fixed:insensitive "dashtodockContainer"] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.250: st_widget_get_theme_node called on the widget [0x63ea1bf19390 Gjs_ubuntu-dock_ubuntu_com_docking_DashSlideContainer:insensitive] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.250: st_widget_get_theme_node called on the widget [0x63ea1bf1a5d0 StBoxLayout "dashtodockBox"] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.250: st_widget_get_theme_node called on the widget [0x63ea1bef0e00 Gjs_ubuntu-dock_ubuntu_com_dash_DockDash:insensitive "dash"] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.250: st_widget_get_theme_node called on the widget [0x63ea1bef2190 StBoxLayout:insensitive "dashtodockDashContainer"] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.250: st_widget_get_theme_node called on the widget [0x63ea1bef33f0 StScrollView "dashtodockDashScrollview"] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.250: st_widget_get_theme_node called on the widget [0x63ea1beef3a0 Gjs_ubuntu-dock_ubuntu_com_docking_DashToDock.left fixed:insensitive "dashtodockContainer"] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.250: st_widget_get_theme_node called on the widget [0x63ea1bf19390 Gjs_ubuntu-dock_ubuntu_com_docking_DashSlideContainer:insensitive] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.250: st_widget_get_theme_node called on the widget [0x63ea1bf1a5d0 StBoxLayout "dashtodockBox"] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.250: st_widget_get_theme_node called on the widget [0x63ea1bef0e00 Gjs_ubuntu-dock_ubuntu_com_dash_DockDash:insensitive "dash"] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.250: st_widget_get_theme_node called on the widget [0x63ea1bef2190 StBoxLayout:insensitive "dashtodockDashContainer"] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.250: st_widget_get_theme_node called on the widget [0x63ea1bf07240 Gjs_ubuntu-dock_ubuntu_com_appIcons_DockShowAppsIcon.dash-item-container] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.250: st_widget_get_theme_node called on the widget [0x63ea1beef3a0 Gjs_ubuntu-dock_ubuntu_com_docking_DashToDock.left fixed:insensitive "dashtodockContainer"] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.250: st_widget_get_theme_node called on the widget [0x63ea1bf19390 Gjs_ubuntu-dock_ubuntu_com_docking_DashSlideContainer:insensitive] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.250: st_widget_get_theme_node called on the widget [0x63ea1bf1a5d0 StBoxLayout "dashtodockBox"] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.250: st_widget_get_theme_node called on the widget [0x63ea1bef0e00 Gjs_ubuntu-dock_ubuntu_com_dash_DockDash:insensitive "dash"] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.250: st_widget_get_theme_node called on the widget [0x63ea1bef2190 StBoxLayout:insensitive "dashtodockDashContainer"] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.250: st_widget_get_theme_node called on the widget [0x63ea1bf07240 Gjs_ubuntu-dock_ubuntu_com_appIcons_DockShowAppsIcon.dash-item-container] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.250: st_widget_get_theme_node called on the widget [0x63ea1beef3a0 Gjs_ubuntu-dock_ubuntu_com_docking_DashToDock.left fixed:insensitive "dashtodockContainer"] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.250: st_widget_get_theme_node called on the widget [0x63ea1bf19390 Gjs_ubuntu-dock_ubuntu_com_docking_DashSlideContainer:insensitive] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.250: st_widget_get_theme_node called on the widget [0x63ea1bf1a5d0 StBoxLayout "dashtodockBox"] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.250: st_widget_get_theme_node called on the widget [0x63ea1bef0e00 Gjs_ubuntu-dock_ubuntu_com_dash_DockDash:insensitive "dash"] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.250: st_widget_get_theme_node called on the widget [0x63ea1bef2190 StBoxLayout:insensitive "dashtodockDashContainer"] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.250: st_widget_get_theme_node called on the widget [0x63ea1bf07240 Gjs_ubuntu-dock_ubuntu_com_appIcons_DockShowAppsIcon.dash-item-container] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.250: st_widget_get_theme_node called on the widget [0x63ea1bf0e120 StButton.show-apps] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.293: st_widget_get_theme_node called on the widget [0x63ea1beef3a0 Gjs_ubuntu-dock_ubuntu_com_docking_DashToDock.left fixed extended:insensitive "dashtodockContainer"] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.293: st_widget_get_theme_node called on the widget [0x63ea1beef3a0 Gjs_ubuntu-dock_ubuntu_com_docking_DashToDock.left fixed extended:insensitive "dashtodockContainer"] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.293: st_widget_get_theme_node called on the widget [0x63ea1bf19390 Gjs_ubuntu-dock_ubuntu_com_docking_DashSlideContainer:insensitive] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.293: st_widget_get_theme_node called on the widget [0x63ea1beef3a0 Gjs_ubuntu-dock_ubuntu_com_docking_DashToDock.left fixed extended:insensitive "dashtodockContainer"] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.293: st_widget_get_theme_node called on the widget [0x63ea1bf19390 Gjs_ubuntu-dock_ubuntu_com_docking_DashSlideContainer:insensitive] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.293: st_widget_get_theme_node called on the widget [0x63ea1bf1a5d0 StBoxLayout "dashtodockBox"] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.293: st_widget_get_theme_node called on the widget [0x63ea1beef3a0 Gjs_ubuntu-dock_ubuntu_com_docking_DashToDock.left fixed extended:insensitive "dashtodockContainer"] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.293: st_widget_get_theme_node called on the widget [0x63ea1bf19390 Gjs_ubuntu-dock_ubuntu_com_docking_DashSlideContainer:insensitive] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.293: st_widget_get_theme_node called on the widget [0x63ea1bf1a5d0 StBoxLayout "dashtodockBox"] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.293: st_widget_get_theme_node called on the widget [0x63ea1bef0e00 Gjs_ubuntu-dock_ubuntu_com_dash_DockDash:insensitive "dash"] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.293: st_widget_get_theme_node called on the widget [0x63ea1beef3a0 Gjs_ubuntu-dock_ubuntu_com_docking_DashToDock.left fixed extended:insensitive "dashtodockContainer"] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.293: st_widget_get_theme_node called on the widget [0x63ea1bf19390 Gjs_ubuntu-dock_ubuntu_com_docking_DashSlideContainer:insensitive] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.293: st_widget_get_theme_node called on the widget [0x63ea1bf1a5d0 StBoxLayout "dashtodockBox"] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.293: st_widget_get_theme_node called on the widget [0x63ea1bef0e00 Gjs_ubuntu-dock_ubuntu_com_dash_DockDash:insensitive "dash"] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.293: st_widget_get_theme_node called on the widget [0x63ea1bf15b20 StWidget.dash-background:insensitive] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.293: st_widget_get_theme_node called on the widget [0x63ea1beef3a0 Gjs_ubuntu-dock_ubuntu_com_docking_DashToDock.left fixed extended:insensitive "dashtodockContainer"] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.293: st_widget_get_theme_node called on the widget [0x63ea1bf19390 Gjs_ubuntu-dock_ubuntu_com_docking_DashSlideContainer:insensitive] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.293: st_widget_get_theme_node called on the widget [0x63ea1bf1a5d0 StBoxLayout "dashtodockBox"] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.293: st_widget_get_theme_node called on the widget [0x63ea1bef0e00 Gjs_ubuntu-dock_ubuntu_com_dash_DockDash:insensitive "dash"] which is not in the stage.
+
+(gnome-shell:135203): St-CRITICAL **: 17:46:43.293: st_widget_get_theme_node called on the widget [0x63ea1bef2190 StBoxLayout:insensitive "dashtodockDashContainer"] which is not in the stage.
+
+(gnome-shell:135203): accountsservice-WARNING **: 17:46:43.376: ActUserManager: user (null) has no username (uid: -1)
+
+(gnome-shell:135203): GNOME Shell-CRITICAL **: 17:46:43.377: Impossible to get trash children from infos: Gio.IOErrorEnum: Operação sem suporte
+
+Stack trace:
+  _promisify/proto[asyncFunc]/</<@resource:///org/gnome/gjs/modules/core/overrides/Gio.js:493:45
+  @resource:///org/gnome/shell/ui/init.js:20:20
+  ### Promise created here: ###
+  _updateTrash@file:///usr/share/gnome-shell/extensions/ubuntu-dock@ubuntu.com/locations.js:834:51
+  _init@file:///usr/share/gnome-shell/extensions/ubuntu-dock@ubuntu.com/locations.js:779:14
+  LocationAppInfo@file:///usr/share/gnome-shell/extensions/ubuntu-dock@ubuntu.com/locations.js:114:4
+  TrashAppInfo@file:///usr/share/gnome-shell/extensions/ubuntu-dock@ubuntu.com/locations.js:747:1
+  _ensureApp@file:///usr/share/gnome-shell/extensions/ubuntu-dock@ubuntu.com/locations.js:1342:22
+  getApp@file:///usr/share/gnome-shell/extensions/ubuntu-dock@ubuntu.com/locations.js:1348:14
+  wrapFileManagerApp@file:///usr/share/gnome-shell/extensions/ubuntu-dock@ubuntu.com/locations.js:1295:22
+  _ensureLocations@file:///usr/share/gnome-shell/extensions/ubuntu-dock@ubuntu.com/docking.js:1884:50
+  DockManager@file:///usr/share/gnome-shell/extensions/ubuntu-dock@ubuntu.com/docking.js:1764:14
+  _conditionallyEnableDock@file:///usr/share/gnome-shell/extensions/ubuntu-dock@ubuntu.com/extension.js:21:27
+  enable@file:///usr/share/gnome-shell/extensions/ubuntu-dock@ubuntu.com/extension.js:14:14
+  _callExtensionEnable@resource:///org/gnome/shell/ui/extensionSystem.js:266:38
+  loadExtension@resource:///org/gnome/shell/ui/extensionSystem.js:433:32
+  async*_loadExtensions@resource:///org/gnome/shell/ui/extensionSystem.js:753:24
+  async*_enableAllExtensions@resource:///org/gnome/shell/ui/extensionSystem.js:759:48
+  _sessionUpdated@resource:///org/gnome/shell/ui/extensionSystem.js:794:20
+  async*init@resource:///org/gnome/shell/ui/extensionSystem.js:76:14
+  _initializeUI@resource:///org/gnome/shell/ui/main.js:338:22
+  start@resource:///org/gnome/shell/ui/main.js:197:11
+  @resource:///org/gnome/shell/ui/init.js:12:47
+  @resource:///org/gnome/shell/ui/init.js:20:20
+  
+
+(gnome-shell:135203): GNOME Shell-CRITICAL **: 17:46:43.377: Impossible to update icon for location:trash://: Gio.IOErrorEnum: Operação sem suporte
+
+Stack trace:
+  _promisify/proto[asyncFunc]/</<@resource:///org/gnome/gjs/modules/core/overrides/Gio.js:493:45
+  @resource:///org/gnome/shell/ui/init.js:20:20
+  ### Promise created here: ###
+  _queryLocationIcons@file:///usr/share/gnome-shell/extensions/ubuntu-dock@ubuntu.com/locations.js:274:40
+  _updateLocationIcon@file:///usr/share/gnome-shell/extensions/ubuntu-dock@ubuntu.com/locations.js:310:38
+  _init/<@file:///usr/share/gnome-shell/extensions/ubuntu-dock@ubuntu.com/locations.js:781:50
+  _init@file:///usr/share/gnome-shell/extensions/ubuntu-dock@ubuntu.com/locations.js:782:14
+  LocationAppInfo@file:///usr/share/gnome-shell/extensions/ubuntu-dock@ubuntu.com/locations.js:114:4
+  TrashAppInfo@file:///usr/share/gnome-shell/extensions/ubuntu-dock@ubuntu.com/locations.js:747:1
+  _ensureApp@file:///usr/share/gnome-shell/extensions/ubuntu-dock@ubuntu.com/locations.js:1342:22
+  getApp@file:///usr/share/gnome-shell/extensions/ubuntu-dock@ubuntu.com/locations.js:1348:14
+  wrapFileManagerApp@file:///usr/share/gnome-shell/extensions/ubuntu-dock@ubuntu.com/locations.js:1295:22
+  _ensureLocations@file:///usr/share/gnome-shell/extensions/ubuntu-dock@ubuntu.com/docking.js:1884:50
+  DockManager@file:///usr/share/gnome-shell/extensions/ubuntu-dock@ubuntu.com/docking.js:1764:14
+  _conditionallyEnableDock@file:///usr/share/gnome-shell/extensions/ubuntu-dock@ubuntu.com/extension.js:21:27
+  enable@file:///usr/share/gnome-shell/extensions/ubuntu-dock@ubuntu.com/extension.js:14:14
+  _callExtensionEnable@resource:///org/gnome/shell/ui/extensionSystem.js:266:38
+  loadExtension@resource:///org/gnome/shell/ui/extensionSystem.js:433:32
+  async*_loadExtensions@resource:///org/gnome/shell/ui/extensionSystem.js:753:24
+  async*_enableAllExtensions@resource:///org/gnome/shell/ui/extensionSystem.js:759:48
+  _sessionUpdated@resource:///org/gnome/shell/ui/extensionSystem.js:794:20
+  async*init@resource:///org/gnome/shell/ui/extensionSystem.js:76:14
+  _initializeUI@resource:///org/gnome/shell/ui/main.js:338:22
+  start@resource:///org/gnome/shell/ui/main.js:197:11
+  @resource:///org/gnome/shell/ui/init.js:12:47
+  @resource:///org/gnome/shell/ui/init.js:20:20
+  
+GNOME Shell-Message: 17:46:43.759: GNOME Shell started at Fri Nov 13 2026 17:46:43 GMT-0300 (Horário Padrão de Brasília)
+GNOME Shell-Message: 17:46:43.759: Registering display with GDM
+GNOME Shell-Message: 17:46:43.778: Error registering display with GDM: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name org.gnome.DisplayManager was not provided by any .service files
+
+(gnome-shell:135203): Gvc-WARNING **: 17:46:48.854: Failed to connect context: Conexão recusada
+** Message: 17:46:50.653: Shutting down GNOME Shell
+libmutter-Message: 17:46:50.736: Removed virtual monitor Meta-0

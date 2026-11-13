@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+  <schema id="org.gnome.shell.extensions.kodo-cgpu"
+          path="/org/gnome/shell/extensions/kodo-cgpu/">
+    <key name="widget-mode" type="s">
+      <choices>
+        <choice value="desktop"/>
+        <choice value="above"/>
+        <choice value="hidden"/>
+      </choices>
+      <default>'desktop'</default>
+      <summary>Onde mostrar o widget</summary>
+      <description>desktop: na área de trabalho (atrás das janelas); above: sempre visível sobre as janelas; hidden: oculto.</description>
+    </key>
+    <key name="widget-position" type="s">
+      <choices>
+        <choice value="top-left"/>
+        <choice value="top-right"/>
+        <choice value="bottom-left"/>
+        <choice value="bottom-right"/>
+      </choices>
+      <default>'top-left'</default>
+      <summary>Canto da tela onde o widget fica</summary>
+    </key>
+    <key name="show-panel-text" type="b">
+      <default>true</default>
+      <summary>Mostrar valores na barra superior</summary>
+    </key>
+  </schema>
+</schemalist>
