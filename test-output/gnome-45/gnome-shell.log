@@ -1,0 +1,188 @@
+libmutter-Message: 00:15:41.796: Running GNOME Shell (using mutter 45.2) as a Wayland display server
+
+(gnome-shell:31): libmutter-WARNING **: 00:15:41.804: Failed to make thread 'KMS thread' realtime scheduled: GDBus.Error:org.freedesktop.DBus.Error.NameHasNoOwner: Name "org.freedesktop.RealtimeKit1" does not exist
+libmutter-Message: 00:15:41.824: Created surfaceless renderer without GPU
+libmutter-Message: 00:15:41.833: Disabling DMA buffer screen sharing (not hardware accelerated)
+libmutter-Message: 00:15:41.833: Disabling DMA buffer screen sharing (implicit modifiers not supported)
+libmutter-Message: 00:15:41.833: Added virtual monitor Meta-0
+libmutter-Message: 00:15:41.839: Using Wayland display name 'cgm-test-1'
+Window manager warning: Failed to set environment variable WAYLAND_DISPLAY for gnome-session: GDBus.Error:org.freedesktop.DBus.Error.NameHasNoOwner: Name "org.gnome.SessionManager" does not exist
+
+(gnome-shell:31): libmutter-WARNING **: 00:15:41.859: There is no colord server available
+GNOME Shell-Message: 00:15:42.026: Failed to launch ibus-daemon: Failed to execute child process “ibus-daemon” (No such file or directory)
+
+(gnome-shell:31): Gjs-WARNING **: 00:15:42.034: JS ERROR: Gio.DBusError: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name org.gnome.Shell.CalendarServer was not provided by any .service files
+asyncCallback@resource:///org/gnome/gjs/modules/core/overrides/Gio.js:114:23
+@resource:///org/gnome/shell/ui/init.js:21:20
+
+
+(gnome-shell:31): Gjs-WARNING **: 00:15:42.034: JS ERROR: Gio.DBusError: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name org.gnome.Shell.CalendarServer was not provided by any .service files
+asyncCallback@resource:///org/gnome/gjs/modules/core/overrides/Gio.js:114:23
+@resource:///org/gnome/shell/ui/init.js:21:20
+
+GNOME Shell-Message: 00:15:42.038: Failed to register AuthenticationAgent
+GNOME Shell-Message: 00:15:42.067: No permission to control network connections: Gio.DBusError: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.PolicyKit1 was not provided by any .service files
+
+(gnome-shell:31): GNOME Shell-WARNING **: 00:15:42.070: Missing required core component Settings, expect trouble…
+** Message: 00:15:42.073: Failed to start camera monitor
+
+(gnome-shell:31): Gvc-WARNING **: 00:15:42.074: Failed to connect context: Connection refused
+GNOME Shell-Message: 00:15:42.083: Failed to get PolKit permission: Gio.DBusError: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.PolicyKit1 was not provided by any .service files
+GNOME Shell-Message: 00:15:42.083: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.GeoClue2 was not provided by any .service files
+GNOME Shell-Message: 00:15:42.099: Failed to import DBusMenu, quicklists are not available: Error: Requiring Dbusmenu, version none: Typelib file for namespace 'Dbusmenu' (any version) not found
+GNOME Shell-Message: 00:15:42.099: Failed to import DBusMenu, quicklists are not available: Error: Requiring Dbusmenu, version none: Typelib file for namespace 'Dbusmenu' (any version) not found
+GNOME Shell-Message: 00:15:42.099: Failed to import DBusMenu, quicklists are not available: Error: Requiring Dbusmenu, version none: Typelib file for namespace 'Dbusmenu' (any version) not found
+
+(gnome-shell:31): accountsservice-WARNING **: 00:15:42.114: ActUserManager: user (null) has no username (uid: -1)
+Window manager warning: Overwriting existing binding of keysym 36 with keysym 36 (keycode f).
+Window manager warning: Overwriting existing binding of keysym 32 with keysym 32 (keycode b).
+Window manager warning: Overwriting existing binding of keysym 39 with keysym 39 (keycode 12).
+Window manager warning: Overwriting existing binding of keysym 33 with keysym 33 (keycode c).
+Window manager warning: Overwriting existing binding of keysym 35 with keysym 35 (keycode e).
+Window manager warning: Overwriting existing binding of keysym 37 with keysym 37 (keycode 10).
+Window manager warning: Overwriting existing binding of keysym 31 with keysym 31 (keycode a).
+Window manager warning: Overwriting existing binding of keysym 34 with keysym 34 (keycode d).
+Window manager warning: Overwriting existing binding of keysym 38 with keysym 38 (keycode 11).
+
+(gnome-shell:31): Gjs-CRITICAL **: 00:15:42.146: JS ERROR: TypeError: this._prepareStartupAnimation() is undefined
+_loadBackground/signalId</id<@resource:///org/gnome/shell/ui/layout.js:693:26
+@resource:///org/gnome/shell/ui/init.js:21:20
+
+
+(gnome-shell:31): Gjs-WARNING **: 00:15:42.148: JS ERROR: Impossible to monitor trash: Gio.IOErrorEnum: Operation not supported
+_init@file:///usr/share/gnome-shell/extensions/ubuntu-dock@ubuntu.com/locations.js:701:43
+LocationAppInfo@file:///usr/share/gnome-shell/extensions/ubuntu-dock@ubuntu.com/locations.js:113:4
+TrashAppInfo@file:///usr/share/gnome-shell/extensions/ubuntu-dock@ubuntu.com/locations.js:678:1
+_ensureApp@file:///usr/share/gnome-shell/extensions/ubuntu-dock@ubuntu.com/locations.js:1273:22
+getApp@file:///usr/share/gnome-shell/extensions/ubuntu-dock@ubuntu.com/locations.js:1279:14
+getApps@file:///usr/share/gnome-shell/extensions/ubuntu-dock@ubuntu.com/locations.js:1447:45
+getRunningApps@file:///usr/share/gnome-shell/extensions/ubuntu-dock@ubuntu.com/locations.js:1456:12
+_ensureLocations/<@file:///usr/share/gnome-shell/extensions/ubuntu-dock@ubuntu.com/docking.js:1824:56
+_create/object[name]@file:///usr/share/gnome-shell/extensions/ubuntu-dock@ubuntu.com/utils.js:327:37
+_redisplay@file:///usr/share/gnome-shell/extensions/ubuntu-dock@ubuntu.com/dash.js:742:39
+_runDeferredWork@resource:///org/gnome/shell/ui/main.js:946:31
+_runBeforeRedrawQueue@resource:///org/gnome/shell/ui/main.js:961:25
+_queueBeforeRedraw/<@resource:///org/gnome/shell/ui/main.js:971:13
+@resource:///org/gnome/shell/ui/init.js:21:20
+
+
+(gnome-shell:31): Gjs-WARNING **: 00:15:42.157: JS ERROR: Impossible to get trash children from infos: Gio.IOErrorEnum: Operation not supported
+_promisify/proto[asyncFunc]/</<@resource:///org/gnome/gjs/modules/core/overrides/Gio.js:453:45
+@resource:///org/gnome/shell/ui/init.js:21:20
+### Promise created here: ###
+_updateTrash@file:///usr/share/gnome-shell/extensions/ubuntu-dock@ubuntu.com/locations.js:765:51
+_init@file:///usr/share/gnome-shell/extensions/ubuntu-dock@ubuntu.com/locations.js:710:14
+LocationAppInfo@file:///usr/share/gnome-shell/extensions/ubuntu-dock@ubuntu.com/locations.js:113:4
+TrashAppInfo@file:///usr/share/gnome-shell/extensions/ubuntu-dock@ubuntu.com/locations.js:678:1
+_ensureApp@file:///usr/share/gnome-shell/extensions/ubuntu-dock@ubuntu.com/locations.js:1273:22
+getApp@file:///usr/share/gnome-shell/extensions/ubuntu-dock@ubuntu.com/locations.js:1279:14
+getApps@file:///usr/share/gnome-shell/extensions/ubuntu-dock@ubuntu.com/locations.js:1447:45
+getRunningApps@file:///usr/share/gnome-shell/extensions/ubuntu-dock@ubuntu.com/locations.js:1456:12
+_ensureLocations/<@file:///usr/share/gnome-shell/extensions/ubuntu-dock@ubuntu.com/docking.js:1824:56
+_create/object[name]@file:///usr/share/gnome-shell/extensions/ubuntu-dock@ubuntu.com/utils.js:327:37
+_redisplay@file:///usr/share/gnome-shell/extensions/ubuntu-dock@ubuntu.com/dash.js:742:39
+_runDeferredWork@resource:///org/gnome/shell/ui/main.js:946:31
+_runBeforeRedrawQueue@resource:///org/gnome/shell/ui/main.js:961:25
+_queueBeforeRedraw/<@resource:///org/gnome/shell/ui/main.js:971:13
+@resource:///org/gnome/shell/ui/init.js:21:20
+
+
+(gnome-shell:31): Gjs-WARNING **: 00:15:42.157: JS ERROR: Impossible to update icon for location:trash://: Gio.IOErrorEnum: Operation not supported
+_promisify/proto[asyncFunc]/</<@resource:///org/gnome/gjs/modules/core/overrides/Gio.js:453:45
+@resource:///org/gnome/shell/ui/init.js:21:20
+### Promise created here: ###
+_queryLocationIcons@file:///usr/share/gnome-shell/extensions/ubuntu-dock@ubuntu.com/locations.js:273:40
+_updateLocationIcon@file:///usr/share/gnome-shell/extensions/ubuntu-dock@ubuntu.com/locations.js:308:38
+_init/<@file:///usr/share/gnome-shell/extensions/ubuntu-dock@ubuntu.com/locations.js:712:50
+_init@file:///usr/share/gnome-shell/extensions/ubuntu-dock@ubuntu.com/locations.js:713:14
+LocationAppInfo@file:///usr/share/gnome-shell/extensions/ubuntu-dock@ubuntu.com/locations.js:113:4
+TrashAppInfo@file:///usr/share/gnome-shell/extensions/ubuntu-dock@ubuntu.com/locations.js:678:1
+_ensureApp@file:///usr/share/gnome-shell/extensions/ubuntu-dock@ubuntu.com/locations.js:1273:22
+getApp@file:///usr/share/gnome-shell/extensions/ubuntu-dock@ubuntu.com/locations.js:1279:14
+getApps@file:///usr/share/gnome-shell/extensions/ubuntu-dock@ubuntu.com/locations.js:1447:45
+getRunningApps@file:///usr/share/gnome-shell/extensions/ubuntu-dock@ubuntu.com/locations.js:1456:12
+_ensureLocations/<@file:///usr/share/gnome-shell/extensions/ubuntu-dock@ubuntu.com/docking.js:1824:56
+_create/object[name]@file:///usr/share/gnome-shell/extensions/ubuntu-dock@ubuntu.com/utils.js:327:37
+_redisplay@file:///usr/share/gnome-shell/extensions/ubuntu-dock@ubuntu.com/dash.js:742:39
+_runDeferredWork@resource:///org/gnome/shell/ui/main.js:946:31
+_runBeforeRedrawQueue@resource:///org/gnome/shell/ui/main.js:961:25
+_queueBeforeRedraw/<@resource:///org/gnome/shell/ui/main.js:971:13
+@resource:///org/gnome/shell/ui/init.js:21:20
+
+GNOME Shell-Message: 00:15:42.398: GNOME Shell started at Sat Nov 14 2026 00:15:42 GMT+0000 (Coordinated Universal Time)
+GNOME Shell-Message: 00:15:42.398: Registering session with GDM
+GNOME Shell-Message: 00:15:42.400: Error registering session with GDM: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name org.gnome.DisplayManager was not provided by any .service files
+
+(gnome-shell:31): Gvc-WARNING **: 00:15:47.518: Failed to connect context: Connection refused
+
+(gnome-shell:31): Gjs-WARNING **: 00:15:53.168: JS ERROR: Impossible to monitor trash: Gio.IOErrorEnum: Operation not supported
+_init@file:///usr/share/gnome-shell/extensions/ubuntu-dock@ubuntu.com/locations.js:701:43
+LocationAppInfo@file:///usr/share/gnome-shell/extensions/ubuntu-dock@ubuntu.com/locations.js:113:4
+TrashAppInfo@file:///usr/share/gnome-shell/extensions/ubuntu-dock@ubuntu.com/locations.js:678:1
+_ensureApp@file:///usr/share/gnome-shell/extensions/ubuntu-dock@ubuntu.com/locations.js:1273:22
+getApp@file:///usr/share/gnome-shell/extensions/ubuntu-dock@ubuntu.com/locations.js:1279:14
+getApps@file:///usr/share/gnome-shell/extensions/ubuntu-dock@ubuntu.com/locations.js:1447:45
+getRunningApps@file:///usr/share/gnome-shell/extensions/ubuntu-dock@ubuntu.com/locations.js:1456:12
+_ensureLocations/<@file:///usr/share/gnome-shell/extensions/ubuntu-dock@ubuntu.com/docking.js:1824:56
+_create/object[name]@file:///usr/share/gnome-shell/extensions/ubuntu-dock@ubuntu.com/utils.js:327:37
+_redisplay@file:///usr/share/gnome-shell/extensions/ubuntu-dock@ubuntu.com/dash.js:742:39
+_runDeferredWork@resource:///org/gnome/shell/ui/main.js:946:31
+_runBeforeRedrawQueue@resource:///org/gnome/shell/ui/main.js:961:25
+_queueBeforeRedraw/<@resource:///org/gnome/shell/ui/main.js:971:13
+@resource:///org/gnome/shell/ui/init.js:21:20
+
+Window manager warning: Overwriting existing binding of keysym 31 with keysym 31 (keycode a).
+Window manager warning: Overwriting existing binding of keysym 33 with keysym 33 (keycode c).
+Window manager warning: Overwriting existing binding of keysym 34 with keysym 34 (keycode d).
+Window manager warning: Overwriting existing binding of keysym 36 with keysym 36 (keycode f).
+Window manager warning: Overwriting existing binding of keysym 32 with keysym 32 (keycode b).
+Window manager warning: Overwriting existing binding of keysym 37 with keysym 37 (keycode 10).
+Window manager warning: Overwriting existing binding of keysym 38 with keysym 38 (keycode 11).
+Window manager warning: Overwriting existing binding of keysym 39 with keysym 39 (keycode 12).
+Window manager warning: Overwriting existing binding of keysym 35 with keysym 35 (keycode e).
+
+(gnome-shell:31): Gjs-WARNING **: 00:15:53.201: JS ERROR: Impossible to get trash children from infos: Gio.IOErrorEnum: Operation not supported
+_promisify/proto[asyncFunc]/</<@resource:///org/gnome/gjs/modules/core/overrides/Gio.js:453:45
+@resource:///org/gnome/shell/ui/init.js:21:20
+### Promise created here: ###
+_updateTrash@file:///usr/share/gnome-shell/extensions/ubuntu-dock@ubuntu.com/locations.js:765:51
+_init@file:///usr/share/gnome-shell/extensions/ubuntu-dock@ubuntu.com/locations.js:710:14
+LocationAppInfo@file:///usr/share/gnome-shell/extensions/ubuntu-dock@ubuntu.com/locations.js:113:4
+TrashAppInfo@file:///usr/share/gnome-shell/extensions/ubuntu-dock@ubuntu.com/locations.js:678:1
+_ensureApp@file:///usr/share/gnome-shell/extensions/ubuntu-dock@ubuntu.com/locations.js:1273:22
+getApp@file:///usr/share/gnome-shell/extensions/ubuntu-dock@ubuntu.com/locations.js:1279:14
+getApps@file:///usr/share/gnome-shell/extensions/ubuntu-dock@ubuntu.com/locations.js:1447:45
+getRunningApps@file:///usr/share/gnome-shell/extensions/ubuntu-dock@ubuntu.com/locations.js:1456:12
+_ensureLocations/<@file:///usr/share/gnome-shell/extensions/ubuntu-dock@ubuntu.com/docking.js:1824:56
+_create/object[name]@file:///usr/share/gnome-shell/extensions/ubuntu-dock@ubuntu.com/utils.js:327:37
+_redisplay@file:///usr/share/gnome-shell/extensions/ubuntu-dock@ubuntu.com/dash.js:742:39
+_runDeferredWork@resource:///org/gnome/shell/ui/main.js:946:31
+_runBeforeRedrawQueue@resource:///org/gnome/shell/ui/main.js:961:25
+_queueBeforeRedraw/<@resource:///org/gnome/shell/ui/main.js:971:13
+@resource:///org/gnome/shell/ui/init.js:21:20
+
+
+(gnome-shell:31): Gjs-WARNING **: 00:15:53.201: JS ERROR: Impossible to update icon for location:trash://: Gio.IOErrorEnum: Operation not supported
+_promisify/proto[asyncFunc]/</<@resource:///org/gnome/gjs/modules/core/overrides/Gio.js:453:45
+@resource:///org/gnome/shell/ui/init.js:21:20
+### Promise created here: ###
+_queryLocationIcons@file:///usr/share/gnome-shell/extensions/ubuntu-dock@ubuntu.com/locations.js:273:40
+_updateLocationIcon@file:///usr/share/gnome-shell/extensions/ubuntu-dock@ubuntu.com/locations.js:308:38
+_init/<@file:///usr/share/gnome-shell/extensions/ubuntu-dock@ubuntu.com/locations.js:712:50
+_init@file:///usr/share/gnome-shell/extensions/ubuntu-dock@ubuntu.com/locations.js:713:14
+LocationAppInfo@file:///usr/share/gnome-shell/extensions/ubuntu-dock@ubuntu.com/locations.js:113:4
+TrashAppInfo@file:///usr/share/gnome-shell/extensions/ubuntu-dock@ubuntu.com/locations.js:678:1
+_ensureApp@file:///usr/share/gnome-shell/extensions/ubuntu-dock@ubuntu.com/locations.js:1273:22
+getApp@file:///usr/share/gnome-shell/extensions/ubuntu-dock@ubuntu.com/locations.js:1279:14
+getApps@file:///usr/share/gnome-shell/extensions/ubuntu-dock@ubuntu.com/locations.js:1447:45
+getRunningApps@file:///usr/share/gnome-shell/extensions/ubuntu-dock@ubuntu.com/locations.js:1456:12
+_ensureLocations/<@file:///usr/share/gnome-shell/extensions/ubuntu-dock@ubuntu.com/docking.js:1824:56
+_create/object[name]@file:///usr/share/gnome-shell/extensions/ubuntu-dock@ubuntu.com/utils.js:327:37
+_redisplay@file:///usr/share/gnome-shell/extensions/ubuntu-dock@ubuntu.com/dash.js:742:39
+_runDeferredWork@resource:///org/gnome/shell/ui/main.js:946:31
+_runBeforeRedrawQueue@resource:///org/gnome/shell/ui/main.js:961:25
+_queueBeforeRedraw/<@resource:///org/gnome/shell/ui/main.js:971:13
+@resource:///org/gnome/shell/ui/init.js:21:20
+
+** Message: 00:15:55.221: Shutting down GNOME Shell
+libmutter-Message: 00:15:55.252: Removed virtual monitor Meta-0

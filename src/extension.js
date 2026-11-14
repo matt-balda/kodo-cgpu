@@ -19,12 +19,22 @@ import * as Main from 'resource:///org/gnome/shell/ui/main.js';
 import * as PanelMenu from 'resource:///org/gnome/shell/ui/panelMenu.js';
 import * as PopupMenu from 'resource:///org/gnome/shell/ui/popupMenu.js';
 import {Extension} from 'resource:///org/gnome/shell/extensions/extension.js';
+import * as Config from 'resource:///org/gnome/shell/misc/config.js';
 
 const UPDATE_SECONDS = 2;
 const HISTORY_LENGTH = 60; // 60 amostras x 2 s = 2 minutos de histórico nos gráficos
 const WIDGET_MARGIN = 16;
 const GPU_STALE_US = 3 * UPDATE_SECONDS * GLib.USEC_PER_SEC;
 const DIM = 150; // opacidade (0-255) dos textos secundários
+
+// Compatibilidade com o GNOME Shell 45 em diante:
+// - St.BoxLayout só tem "orientation" a partir do 48; até o 47 existe apenas "vertical".
+// - O ornamento de item desmarcado (NO_DOT, bolinha vazia) só existe a partir do 46.
+const SHELL_MAJOR = parseInt(Config.PACKAGE_VERSION, 10);
+const VERTICAL = SHELL_MAJOR >= 48
+    ? {orientation: Clutter.Orientation.VERTICAL}
+    : {vertical: true};
+const ORNAMENT_OFF = PopupMenu.Ornament.NO_DOT ?? PopupMenu.Ornament.NONE;
 
 const COLORS = {
     cpu: [0.384, 0.627, 0.918], // #62a0ea
@@ -588,14 +598,14 @@ const Section = GObject.registerClass(
 class Section extends St.BoxLayout {
     _init({title, key, color, captions = [], graph = false, bar = false}) {
         super._init({
-            orientation: Clutter.Orientation.VERTICAL,
+            ...VERTICAL,
             style_class: `cgm-section cgm-${key}`,
             x_expand: true,
         });
 
         const header = new St.BoxLayout({style_class: 'cgm-header', x_expand: true});
         const titles = new St.BoxLayout({
-            orientation: Clutter.Orientation.VERTICAL,
+            ...VERTICAL,
             x_expand: true,
             y_align: Clutter.ActorAlign.CENTER,
         });
@@ -622,7 +632,7 @@ class Section extends St.BoxLayout {
             row.get_layout_manager().homogeneous = true;
             for (const caption of captions) {
                 const chip = new St.BoxLayout({
-                    orientation: Clutter.Orientation.VERTICAL,
+                    ...VERTICAL,
                     style_class: 'cgm-chip',
                     x_expand: true,
                 });
@@ -662,7 +672,7 @@ class Section extends St.BoxLayout {
 const MonitorView = GObject.registerClass(
 class MonitorView extends St.BoxLayout {
     _init(styleClass) {
-        super._init({orientation: Clutter.Orientation.VERTICAL, style_class: `cgm-view ${styleClass}`});
+        super._init({...VERTICAL, style_class: `cgm-view ${styleClass}`});
 
         this._cpu = new Section({
             title: 'CPU', key: 'cpu', color: COLORS.cpu, graph: true,
@@ -869,9 +879,11 @@ class Indicator extends PanelMenu.Button {
         this.menu.addMenuItem(this._positionMenu);
 
         this._textSwitch = new PopupMenu.PopupSwitchMenuItem('Mostrar valores na barra superior', true);
-        this._textSwitch.connect('toggled', (_item, state) => {
-            if (this._settings.get_boolean('show-panel-text') !== state)
-                this._settings.set_boolean('show-panel-text', state);
+        // Lê o estado do próprio item, não o argumento do sinal: no GNOME 47.0 o "toggled"
+        // sempre chega com true (bug corrigido no 47.1, mas é a versão do Ubuntu 24.10).
+        this._textSwitch.connect('toggled', item => {
+            if (this._settings.get_boolean('show-panel-text') !== item.state)
+                this._settings.set_boolean('show-panel-text', item.state);
         });
         this.menu.addMenuItem(this._textSwitch);
 
@@ -882,12 +894,12 @@ class Indicator extends PanelMenu.Button {
     _syncSettings() {
         const mode = this._settings.get_string('widget-mode');
         for (const [m, item] of this._modeItems)
-            item.setOrnament(m === mode ? PopupMenu.Ornament.DOT : PopupMenu.Ornament.NO_DOT);
+            item.setOrnament(m === mode ? PopupMenu.Ornament.DOT : ORNAMENT_OFF);
         this._modeMenu.label.text = `Widget: ${MODES.find(m => m[0] === mode)?.[2] ?? mode}`;
 
         const position = this._settings.get_string('widget-position');
         for (const [p, item] of this._positionItems)
-            item.setOrnament(p === position ? PopupMenu.Ornament.DOT : PopupMenu.Ornament.NO_DOT);
+            item.setOrnament(p === position ? PopupMenu.Ornament.DOT : ORNAMENT_OFF);
         this._positionMenu.label.text = `Posição: ${POSITIONS.find(p => p[0] === position)?.[2] ?? position}`;
         this._positionMenu.visible = mode !== 'hidden';
 

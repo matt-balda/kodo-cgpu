@@ -1,0 +1,17 @@
+Iniciando GNOME Shell 50.1 isolado...
+Coletando dados por 6s...
+Testes funcionais:
+  ok     dados chegando (uso de CPU e RAM)
+  ok     menu Widget: above
+  ok     menu Widget: hidden
+  ok     menu Widget: desktop
+  ok     menu Posição: bottom-right
+  ok     menu Posição: top-left
+  ok     valores na barra: desligados
+  ok     valores na barra: ligados
+  ok     desativar remove tudo
+  ok     reativar recria tudo
+
+Capturas: /out/area-de-trabalho.png e /out/menu.png
+Log:      /out/gnome-shell.log
+OK: GNOME Shell 50.1, extensão ativa, sem erros e com todos os testes passando.

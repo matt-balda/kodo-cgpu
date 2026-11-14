@@ -1,0 +1,25 @@
+DEPRECATED: The legacy builder is deprecated and will be removed in a future release.
+            Install the buildx component to build images with BuildKit:
+            https://docs.docker.com/go/buildx/
+
+Sending build context to Docker daemon   2.56kB
+Step 1/7 : ARG BASE
+Step 2/7 : FROM ${BASE}
+ ---> 77081d4f1e72
+Step 3/7 : ARG UID=1000
+ ---> Using cache
+ ---> ee182cb8b7a9
+Step 4/7 : ENV DEBIAN_FRONTEND=noninteractive
+ ---> Using cache
+ ---> c094af31a075
+Step 5/7 : RUN set -e;     if ! apt-get update; then         for f in /etc/apt/sources.list /etc/apt/sources.list.d/ubuntu.sources; do             if [ -f "$f" ]; then sed -i -E 's#https?://(archive|security)\.ubuntu\.com/ubuntu#http://old-releases.ubuntu.com/ubuntu#g' "$f"; fi;         done;         apt-get update;     fi;     extra="";     for p in yaru-theme-gnome-shell gnome-shell-extension-ubuntu-dock yaru-theme-icon adwaita-icon-theme              fonts-cantarell fonts-ubuntu libgl1-mesa-dri libegl-mesa0 librsvg2-common; do         if apt-cache show "$p" > /dev/null 2>&1; then extra="$extra $p"; else echo "AVISO: sem o pacote $p"; fi;     done;     apt-get install -y --no-install-recommends gnome-shell dbus libglib2.0-bin $extra;     rm -rf /var/lib/apt/lists/*;     useradd -m -o -u "$UID" -s /bin/bash tester
+ ---> Using cache
+ ---> 5ddfe9538273
+Step 6/7 : USER tester
+ ---> Using cache
+ ---> 760cdac341fa
+Step 7/7 : ENV HOME=/home/tester USER=tester LANG=C.UTF-8
+ ---> Using cache
+ ---> 83878b194fbd
+Successfully built 83878b194fbd
+Successfully tagged kodo-gnome-test:45

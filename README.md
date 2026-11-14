@@ -30,7 +30,9 @@ na barra superior.
 
 ## Requisitos
 
-- GNOME Shell 50 (Ubuntu 26.04). O código usa a API de extensões do GNOME 45+ (ES modules).
+- GNOME Shell 45 a 51, testado em todas essas versões (o Ubuntu 24.04 LTS vem com o GNOME 46 e o
+  26.04 LTS com o 50). Não funciona no GNOME 44 ou anterior: o formato das extensões mudou no 45
+  (ES modules).
 - GPU NVIDIA com driver proprietário (`nvidia-smi`) para os dados da GPU.
 - Sensores do kernel para a temperatura da CPU: `k10temp` (AMD), `zenpower` ou `coretemp` (Intel).
 
@@ -68,12 +70,20 @@ mudanças numa extensão já carregada, é preciso sair e entrar na sessão.
 ```bash
 ./install.sh --link          # a pasta de extensões passa a apontar para src/
 scripts/test-headless.sh     # testa num GNOME Shell isolado e gera capturas em test-output/
+scripts/test-matrix.sh       # repete o teste do GNOME 45 ao 51, em containers Docker
 journalctl --user -f -o cat /usr/bin/gnome-shell   # log do GNOME Shell da sessão
 ```
 
 `scripts/test-headless.sh` sobe um GNOME Shell sem tela, com D-Bus, configurações e pastas
 próprios, então não afeta a sessão atual e dispensa sair dela para testar. Ele tira capturas da
-área de trabalho e do menu, e falha se a extensão não ficar ativa ou se aparecer erro dela no log.
+área de trabalho e do menu, usa os menus da extensão (modo, posição, valores na barra), desativa e
+reativa a extensão (o GNOME faz isso ao bloquear a tela) e falha se algum passo não der o resultado
+esperado, se a extensão não ficar ativa ou se aparecer erro dela no log.
+
+`scripts/test-matrix.sh` roda esse mesmo teste em cada versão do GNOME Shell, do 45 ao 51, cada uma
+num container com o Ubuntu que trouxe aquela versão (precisa de Docker). Dá para escolher as versões
+(`scripts/test-matrix.sh 46 50`). Os resultados ficam em `test-output/gnome-<versão>/`. Na primeira
+vez ele baixa as imagens, de cerca de 1 GB cada.
 
 Como os módulos JavaScript ficam em cache no GNOME Shell, mudanças no código só valem na sessão
 real depois de sair e entrar de novo. O script de teste não tem essa limitação.
@@ -89,6 +99,7 @@ src/
 install.sh           instala / modo desenvolvimento / desinstala
 scripts/
   test-headless.sh   teste automatizado em GNOME Shell isolado
+  test-matrix.sh     o mesmo teste do GNOME 45 ao 51, em containers Docker
 docs/                capturas de tela
 ```
 

@@ -1,0 +1,197 @@
+libmutter-Message: 00:19:36.854: Running GNOME Shell (using mutter 51.0) as a Wayland display server
+libmutter-Message: 00:19:36.913: Created surfaceless renderer without GPU
+libmutter-Message: 00:19:36.930: Added virtual monitor Meta-0
+libmutter-Message: 00:19:36.937: Using Wayland display name 'cgm-test-1'
+
+(gnome-shell:31): libmutter-WARNING **: 00:19:36.966: There is no colord server available
+GNOME Shell-Message: 00:19:37.173: Registering session with GDM
+GNOME Shell-Message: 00:19:37.180: Error registering session with GDM: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name org.gnome.DisplayManager was not provided by any .service files
+GNOME Shell-Message: 00:19:37.187: Failed to launch ibus-daemon: Failed to execute child process “ibus-daemon” (No such file or directory)
+
+(gnome-shell:31): GNOME Shell-WARNING **: 00:19:37.188: Failed to inhibit suspend: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.login1 was not provided by any .service files
+
+(gnome-shell:31): GNOME Shell-CRITICAL **: 00:19:37.210: Could not get a proxy for user 1001: Gio.DBusError: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.login1 was not provided by any .service files
+
+Stack trace:
+  asyncCallback@resource:///org/gnome/gjs/modules/core/overrides/Gio.js:117:23
+  @resource:///org/gnome/shell/ui/init.js:20:20
+  
+
+(gnome-shell:31): GNOME Shell-WARNING **: 00:19:37.210: Failed to start state machine: can't access property "connectObject", this._loginUser is null
+
+(gnome-shell:31): GNOME Shell-CRITICAL **: 00:19:37.210: Gio.DBusError: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name org.gnome.Shell.CalendarServer was not provided by any .service files
+
+Stack trace:
+  asyncCallback@resource:///org/gnome/gjs/modules/core/overrides/Gio.js:117:23
+  @resource:///org/gnome/shell/ui/init.js:20:20
+  
+
+(gnome-shell:31): GNOME Shell-CRITICAL **: 00:19:37.210: Gio.DBusError: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name org.gnome.Shell.CalendarServer was not provided by any .service files
+
+Stack trace:
+  asyncCallback@resource:///org/gnome/gjs/modules/core/overrides/Gio.js:117:23
+  @resource:///org/gnome/shell/ui/init.js:20:20
+  
+WARNING: Glycin running without sandbox. Bubblewrap (bwrap) doesn't work in the environment.
+GNOME Shell-Message: 00:19:37.236: Failed to register AuthenticationAgent
+** Message: 00:19:37.286: Failed to start camera monitor
+
+(gnome-shell:31): Gvc-WARNING **: 00:19:37.288: Failed to connect context: Connection refused
+GNOME Shell-Message: 00:19:37.302: No permission to control network connections: Gio.DBusError: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.PolicyKit1 was not provided by any .service files
+GNOME Shell-Message: 00:19:37.302: Failed to get PolKit permission: Gio.DBusError: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.PolicyKit1 was not provided by any .service files
+GNOME Shell-Message: 00:19:37.310: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.GeoClue2 was not provided by any .service files
+GNOME Shell-Message: 00:19:37.331: Failed to import DBusMenu, quicklists are not available: Error: Requiring Dbusmenu, version none: Typelib file for namespace 'Dbusmenu' (any version) not found
+GNOME Shell-Message: 00:19:37.331: Failed to import DBusMenu, quicklists are not available: Error: Requiring Dbusmenu, version none: Typelib file for namespace 'Dbusmenu' (any version) not found
+GNOME Shell-Message: 00:19:37.331: Failed to import DBusMenu, quicklists are not available: Error: Requiring Dbusmenu, version none: Typelib file for namespace 'Dbusmenu' (any version) not found
+
+(gnome-shell:31): GNOME Shell-CRITICAL **: 00:19:37.350: Impossible to monitor trash: Gio.IOErrorEnum: Operation not supported
+
+Stack trace:
+  _init@file:///usr/share/gnome-shell/extensions/ubuntu-dock@ubuntu.com/locations.js:770:43
+  LocationAppInfo@file:///usr/share/gnome-shell/extensions/ubuntu-dock@ubuntu.com/locations.js:114:4
+  TrashAppInfo@file:///usr/share/gnome-shell/extensions/ubuntu-dock@ubuntu.com/locations.js:747:1
+  _ensureApp@file:///usr/share/gnome-shell/extensions/ubuntu-dock@ubuntu.com/locations.js:1342:22
+  getApp@file:///usr/share/gnome-shell/extensions/ubuntu-dock@ubuntu.com/locations.js:1348:14
+  getApps@file:///usr/share/gnome-shell/extensions/ubuntu-dock@ubuntu.com/locations.js:1518:45
+  getRunningApps@file:///usr/share/gnome-shell/extensions/ubuntu-dock@ubuntu.com/locations.js:1527:12
+  _ensureLocations/<@file:///usr/share/gnome-shell/extensions/ubuntu-dock@ubuntu.com/docking.js:2028:56
+  _create/object[name]@file:///usr/share/gnome-shell/extensions/ubuntu-dock@ubuntu.com/utils.js:420:37
+  _redisplay@resource:///org/gnome/shell/ui/dash.js:680:41
+  _runDeferredWork@resource:///org/gnome/shell/ui/main.js:984:31
+  _runBeforeRedrawQueue@resource:///org/gnome/shell/ui/main.js:999:25
+  _queueBeforeRedraw/<@resource:///org/gnome/shell/ui/main.js:1009:13
+  @resource:///org/gnome/shell/ui/init.js:20:20
+  
+GNOME Shell-Message: 00:19:37.469: GNOME Shell started at Sat Nov 14 2026 00:19:37 GMT+0000 (Coordinated Universal Time)
+GNOME Shell-Message: 00:19:37.469: Registering display with GDM
+GNOME Shell-Message: 00:19:37.492: Error registering display with GDM: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name org.gnome.DisplayManager was not provided by any .service files
+
+(gnome-shell:31): accountsservice-WARNING **: 00:19:37.649: ActUserManager: user (null) has no username (uid: -1)
+
+(gnome-shell:31): GNOME Shell-CRITICAL **: 00:19:37.744: Impossible to get trash children from infos: Gio.IOErrorEnum: Operation not supported
+
+Stack trace:
+  _promisify/proto[asyncFunc]/</<@resource:///org/gnome/gjs/modules/core/overrides/Gio.js:492:45
+  @resource:///org/gnome/shell/ui/init.js:20:20
+  ### Promise created here: ###
+  _updateTrash@file:///usr/share/gnome-shell/extensions/ubuntu-dock@ubuntu.com/locations.js:834:51
+  _init@file:///usr/share/gnome-shell/extensions/ubuntu-dock@ubuntu.com/locations.js:779:14
+  LocationAppInfo@file:///usr/share/gnome-shell/extensions/ubuntu-dock@ubuntu.com/locations.js:114:4
+  TrashAppInfo@file:///usr/share/gnome-shell/extensions/ubuntu-dock@ubuntu.com/locations.js:747:1
+  _ensureApp@file:///usr/share/gnome-shell/extensions/ubuntu-dock@ubuntu.com/locations.js:1342:22
+  getApp@file:///usr/share/gnome-shell/extensions/ubuntu-dock@ubuntu.com/locations.js:1348:14
+  getApps@file:///usr/share/gnome-shell/extensions/ubuntu-dock@ubuntu.com/locations.js:1518:45
+  getRunningApps@file:///usr/share/gnome-shell/extensions/ubuntu-dock@ubuntu.com/locations.js:1527:12
+  _ensureLocations/<@file:///usr/share/gnome-shell/extensions/ubuntu-dock@ubuntu.com/docking.js:2028:56
+  _create/object[name]@file:///usr/share/gnome-shell/extensions/ubuntu-dock@ubuntu.com/utils.js:420:37
+  _redisplay@resource:///org/gnome/shell/ui/dash.js:680:41
+  _runDeferredWork@resource:///org/gnome/shell/ui/main.js:984:31
+  _runBeforeRedrawQueue@resource:///org/gnome/shell/ui/main.js:999:25
+  _queueBeforeRedraw/<@resource:///org/gnome/shell/ui/main.js:1009:13
+  @resource:///org/gnome/shell/ui/init.js:20:20
+  
+
+(gnome-shell:31): GNOME Shell-CRITICAL **: 00:19:37.744: Impossible to update icon for location:trash://: Gio.IOErrorEnum: Operation not supported
+
+Stack trace:
+  _promisify/proto[asyncFunc]/</<@resource:///org/gnome/gjs/modules/core/overrides/Gio.js:492:45
+  @resource:///org/gnome/shell/ui/init.js:20:20
+  ### Promise created here: ###
+  _queryLocationIcons@file:///usr/share/gnome-shell/extensions/ubuntu-dock@ubuntu.com/locations.js:274:40
+  _updateLocationIcon@file:///usr/share/gnome-shell/extensions/ubuntu-dock@ubuntu.com/locations.js:310:38
+  _init/<@file:///usr/share/gnome-shell/extensions/ubuntu-dock@ubuntu.com/locations.js:781:50
+  _init@file:///usr/share/gnome-shell/extensions/ubuntu-dock@ubuntu.com/locations.js:782:14
+  LocationAppInfo@file:///usr/share/gnome-shell/extensions/ubuntu-dock@ubuntu.com/locations.js:114:4
+  TrashAppInfo@file:///usr/share/gnome-shell/extensions/ubuntu-dock@ubuntu.com/locations.js:747:1
+  _ensureApp@file:///usr/share/gnome-shell/extensions/ubuntu-dock@ubuntu.com/locations.js:1342:22
+  getApp@file:///usr/share/gnome-shell/extensions/ubuntu-dock@ubuntu.com/locations.js:1348:14
+  getApps@file:///usr/share/gnome-shell/extensions/ubuntu-dock@ubuntu.com/locations.js:1518:45
+  getRunningApps@file:///usr/share/gnome-shell/extensions/ubuntu-dock@ubuntu.com/locations.js:1527:12
+  _ensureLocations/<@file:///usr/share/gnome-shell/extensions/ubuntu-dock@ubuntu.com/docking.js:2028:56
+  _create/object[name]@file:///usr/share/gnome-shell/extensions/ubuntu-dock@ubuntu.com/utils.js:420:37
+  _redisplay@resource:///org/gnome/shell/ui/dash.js:680:41
+  _runDeferredWork@resource:///org/gnome/shell/ui/main.js:984:31
+  _runBeforeRedrawQueue@resource:///org/gnome/shell/ui/main.js:999:25
+  _queueBeforeRedraw/<@resource:///org/gnome/shell/ui/main.js:1009:13
+  @resource:///org/gnome/shell/ui/init.js:20:20
+  
+
+(gnome-shell:31): Gvc-WARNING **: 00:19:42.905: Failed to connect context: Connection refused
+
+(gnome-shell:31): GNOME Shell-CRITICAL **: 00:19:48.398: Impossible to monitor trash: Gio.IOErrorEnum: Operation not supported
+
+Stack trace:
+  _init@file:///usr/share/gnome-shell/extensions/ubuntu-dock@ubuntu.com/locations.js:770:43
+  LocationAppInfo@file:///usr/share/gnome-shell/extensions/ubuntu-dock@ubuntu.com/locations.js:114:4
+  TrashAppInfo@file:///usr/share/gnome-shell/extensions/ubuntu-dock@ubuntu.com/locations.js:747:1
+  _ensureApp@file:///usr/share/gnome-shell/extensions/ubuntu-dock@ubuntu.com/locations.js:1342:22
+  getApp@file:///usr/share/gnome-shell/extensions/ubuntu-dock@ubuntu.com/locations.js:1348:14
+  getApps@file:///usr/share/gnome-shell/extensions/ubuntu-dock@ubuntu.com/locations.js:1518:45
+  getRunningApps@file:///usr/share/gnome-shell/extensions/ubuntu-dock@ubuntu.com/locations.js:1527:12
+  _ensureLocations/<@file:///usr/share/gnome-shell/extensions/ubuntu-dock@ubuntu.com/docking.js:2028:56
+  _create/object[name]@file:///usr/share/gnome-shell/extensions/ubuntu-dock@ubuntu.com/utils.js:420:37
+  _redisplay@file:///usr/share/gnome-shell/extensions/ubuntu-dock@ubuntu.com/dash.js:786:39
+  resetAppIcons@file:///usr/share/gnome-shell/extensions/ubuntu-dock@ubuntu.com/dash.js:1075:14
+  _init/<@file:///usr/share/gnome-shell/extensions/ubuntu-dock@ubuntu.com/docking.js:382:29
+  _callHandlers@resource:///org/gnome/gjs/modules/core/_signals.js:130:42
+  _emit@resource:///org/gnome/gjs/modules/core/_signals.js:119:10
+  updateCustomTheme@file:///usr/share/gnome-shell/extensions/ubuntu-dock@ubuntu.com/theming.js:268:14
+  _queueUpdateCustomTheme/this._updateLater<@file:///usr/share/gnome-shell/extensions/ubuntu-dock@ubuntu.com/theming.js:113:18
+  @resource:///org/gnome/shell/ui/init.js:20:20
+  
+
+(gnome-shell:31): GNOME Shell-CRITICAL **: 00:19:48.443: Impossible to get trash children from infos: Gio.IOErrorEnum: Operation not supported
+
+Stack trace:
+  _promisify/proto[asyncFunc]/</<@resource:///org/gnome/gjs/modules/core/overrides/Gio.js:492:45
+  @resource:///org/gnome/shell/ui/init.js:20:20
+  ### Promise created here: ###
+  _updateTrash@file:///usr/share/gnome-shell/extensions/ubuntu-dock@ubuntu.com/locations.js:834:51
+  _init@file:///usr/share/gnome-shell/extensions/ubuntu-dock@ubuntu.com/locations.js:779:14
+  LocationAppInfo@file:///usr/share/gnome-shell/extensions/ubuntu-dock@ubuntu.com/locations.js:114:4
+  TrashAppInfo@file:///usr/share/gnome-shell/extensions/ubuntu-dock@ubuntu.com/locations.js:747:1
+  _ensureApp@file:///usr/share/gnome-shell/extensions/ubuntu-dock@ubuntu.com/locations.js:1342:22
+  getApp@file:///usr/share/gnome-shell/extensions/ubuntu-dock@ubuntu.com/locations.js:1348:14
+  getApps@file:///usr/share/gnome-shell/extensions/ubuntu-dock@ubuntu.com/locations.js:1518:45
+  getRunningApps@file:///usr/share/gnome-shell/extensions/ubuntu-dock@ubuntu.com/locations.js:1527:12
+  _ensureLocations/<@file:///usr/share/gnome-shell/extensions/ubuntu-dock@ubuntu.com/docking.js:2028:56
+  _create/object[name]@file:///usr/share/gnome-shell/extensions/ubuntu-dock@ubuntu.com/utils.js:420:37
+  _redisplay@file:///usr/share/gnome-shell/extensions/ubuntu-dock@ubuntu.com/dash.js:786:39
+  resetAppIcons@file:///usr/share/gnome-shell/extensions/ubuntu-dock@ubuntu.com/dash.js:1075:14
+  _init/<@file:///usr/share/gnome-shell/extensions/ubuntu-dock@ubuntu.com/docking.js:382:29
+  _callHandlers@resource:///org/gnome/gjs/modules/core/_signals.js:130:42
+  _emit@resource:///org/gnome/gjs/modules/core/_signals.js:119:10
+  updateCustomTheme@file:///usr/share/gnome-shell/extensions/ubuntu-dock@ubuntu.com/theming.js:268:14
+  _queueUpdateCustomTheme/this._updateLater<@file:///usr/share/gnome-shell/extensions/ubuntu-dock@ubuntu.com/theming.js:113:18
+  @resource:///org/gnome/shell/ui/init.js:20:20
+  
+
+(gnome-shell:31): GNOME Shell-CRITICAL **: 00:19:48.443: Impossible to update icon for location:trash://: Gio.IOErrorEnum: Operation not supported
+
+Stack trace:
+  _promisify/proto[asyncFunc]/</<@resource:///org/gnome/gjs/modules/core/overrides/Gio.js:492:45
+  @resource:///org/gnome/shell/ui/init.js:20:20
+  ### Promise created here: ###
+  _queryLocationIcons@file:///usr/share/gnome-shell/extensions/ubuntu-dock@ubuntu.com/locations.js:274:40
+  _updateLocationIcon@file:///usr/share/gnome-shell/extensions/ubuntu-dock@ubuntu.com/locations.js:310:38
+  _init/<@file:///usr/share/gnome-shell/extensions/ubuntu-dock@ubuntu.com/locations.js:781:50
+  _init@file:///usr/share/gnome-shell/extensions/ubuntu-dock@ubuntu.com/locations.js:782:14
+  LocationAppInfo@file:///usr/share/gnome-shell/extensions/ubuntu-dock@ubuntu.com/locations.js:114:4
+  TrashAppInfo@file:///usr/share/gnome-shell/extensions/ubuntu-dock@ubuntu.com/locations.js:747:1
+  _ensureApp@file:///usr/share/gnome-shell/extensions/ubuntu-dock@ubuntu.com/locations.js:1342:22
+  getApp@file:///usr/share/gnome-shell/extensions/ubuntu-dock@ubuntu.com/locations.js:1348:14
+  getApps@file:///usr/share/gnome-shell/extensions/ubuntu-dock@ubuntu.com/locations.js:1518:45
+  getRunningApps@file:///usr/share/gnome-shell/extensions/ubuntu-dock@ubuntu.com/locations.js:1527:12
+  _ensureLocations/<@file:///usr/share/gnome-shell/extensions/ubuntu-dock@ubuntu.com/docking.js:2028:56
+  _create/object[name]@file:///usr/share/gnome-shell/extensions/ubuntu-dock@ubuntu.com/utils.js:420:37
+  _redisplay@file:///usr/share/gnome-shell/extensions/ubuntu-dock@ubuntu.com/dash.js:786:39
+  resetAppIcons@file:///usr/share/gnome-shell/extensions/ubuntu-dock@ubuntu.com/dash.js:1075:14
+  _init/<@file:///usr/share/gnome-shell/extensions/ubuntu-dock@ubuntu.com/docking.js:382:29
+  _callHandlers@resource:///org/gnome/gjs/modules/core/_signals.js:130:42
+  _emit@resource:///org/gnome/gjs/modules/core/_signals.js:119:10
+  updateCustomTheme@file:///usr/share/gnome-shell/extensions/ubuntu-dock@ubuntu.com/theming.js:268:14
+  _queueUpdateCustomTheme/this._updateLater<@file:///usr/share/gnome-shell/extensions/ubuntu-dock@ubuntu.com/theming.js:113:18
+  @resource:///org/gnome/shell/ui/init.js:20:20
+  
+** Message: 00:19:50.416: Shutting down GNOME Shell
+libmutter-Message: 00:19:50.473: Removed virtual monitor Meta-0
